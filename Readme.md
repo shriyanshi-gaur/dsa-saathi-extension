@@ -19,6 +19,14 @@ You’ll receive:
 
 ---
 
+### 🔐 Setting up Your Gemini API Key
+
+Before you can use DSA Saathi, enter your Gemini API key in the options page:
+
+![API Key Setup](screenshots/working3.jpg)
+
+---
+
 ## 💻 Example Response
 
 > “Hey there, future coding superstar! ✨ Let's tackle this "Longest Substring with At Least K Repeating Characters" problem together.  
