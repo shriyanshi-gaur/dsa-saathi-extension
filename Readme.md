@@ -21,66 +21,64 @@ You’ll receive:
 
 ## 💻 Example Response
 
-> “Imagine you're planning a party 🎉 and you want to invite at least *k* friends from each of your different friend groups...”  
->  
-> That’s how DSA Saathi explains the *"Longest Substring with At Least K Repeating Characters"* — using people, parties, and patterns to explain the logic. No code, just concept.
+> “Hey there, future coding superstar! ✨ Let's tackle this "Longest Substring with At Least K Repeating Characters" problem together.  
+> 
+> Imagine you're planning a party 🎉 and you want to invite at least `k` friends from each of your different friend groups. Let's say `k = 3`. You have a list of your friends (the string `s`), and each friend belongs to a group (represented by the character they are).
+> 
+> Your goal is to find the *longest* group of friends you can invite such that you have at least 3 friends from *every* group represented in that group of friends.
 
-![Hey there, future coding superstar! ✨ Let's tackle this "Longest Substring with At Least K Repeating Characters" problem together.  Think of it like this:
+### 🧪 Example 1
+`s = "aaabb", k = 3` → ✅ Result: `"aaa"` → length = `3`
 
-Imagine you're planning a party 🎉 and you want to invite at least k friends from each of your different friend groups.  Let's say k is 3.  You have a list of your friends (the string s), and each friend belongs to a group (represented by the character they are).
+### 🧪 Example 2
+`s = "ababbc", k = 2` → ✅ Result: `"ababbc"` → length = `6`
 
-Your goal is to find the longest group of friends you can invite such that you have at least 3 friends from every group represented in that group of friends.
+**Patterns:** Use the **sliding window** technique to scan the string and check the frequency of characters inside the window.
 
-**Example 1: s = "aaabb", k = 3**
+**Edge Cases:**
+- Empty string → return 0
+- No valid substring → return 0
 
-Your friend list is "aaabb".  'a' is a group, and 'b' is another.  You need at least 3 friends from each group.  You can invite "aaa" (3 'a's), fulfilling the requirement.  You can't invite "aaabb" because you don't have 3 'b's.  So the longest substring is 3.
+💪 *This problem might seem tricky at first, but breaking it down using analogies like party planning helps! Practice makes perfect.* ✨
 
-**Example 2: s = "ababbc", k = 2**
+---
 
-Now, you need at least 2 friends from each group.  Looking at "ababbc", you can invite "ababbc" because you have at least 2 'a's and at least 2 'b's.  The longest substring is 6.
+## 📸 Screenshots
 
-*Intuition and Patterns:*
 
-The key is to think about sliding windows.  You'll be moving a window across the string, checking if the condition (at least k repetitions of each character within the window) is met.  If it's not met, you shrink or move the window.
+### 🔹 Popup UI
+![DSA Saathi Popup](screenshots/working1.jpg)
 
-*Edge Cases:*
-
-* *Empty string:* If the string is empty, there's no substring, so return 0.
-* *No substring meets the condition:*  If no substring satisfies the condition (at least k of each character), return 0.
-
-*Motivational Note:*
-
-This problem might seem tricky at first, but breaking it down into smaller parts (like the friend group analogy) and focusing on the sliding window technique will help you conquer it!  Don't be afraid to experiment and try different approaches.  Remember, practice makes perfect! 💪  Keep coding, and you'll become a master problem-solver in no time! ✨]
-(./Screenshot/working1.jpg)
-(./Screenshot/working2.jpg)
-
+### 🔹 Gemini Response
+![Gemini Hint Output](screenshots/working2.jpg)
 
 ---
 
 ## ⚙️ How It Works
 
-- Built with `HTML`, `CSS`, and `JavaScript`
-- Uses Google’s **Gemini 1.5 Flash** model via the `generativelanguage.googleapis.com` API
-- Injects a content script into LeetCode to extract problem titles/descriptions
-- Gemini responds with an explanation tailored for beginners, using stories, emojis, and intuitive reasoning
+- 📜 Built with `HTML`, `CSS`, and `JavaScript`
+- 🤖 Uses the Gemini 1.5 Flash model via Google’s API
+- 🧠 Extracts LeetCode problem content from the current tab
+- 📬 Sends a prompt to Gemini to generate a story-style DSA hint
 
 ---
 
 ## 🚀 Features
 
 ✅ Instant AI-generated hints  
-✅ No spoilers — just the "how", not the "what"  
+✅ No spoilers — just the “how,” not the “what”  
 ✅ Beginner-friendly teaching with analogies  
 ✅ Uses your own Gemini API key (private & secure)  
-✅ Clean, colorful, emoji-rich UI
+✅ Beautiful, emoji-rich UI with colorful loading and feedback
 
 ---
 
 ## 🔧 Setup Instructions
 
-1. **Get a Gemini API key**  
+1. **Get a Gemini API Key**  
    👉 From [Google AI Studio](https://makersuite.google.com/app/apikey)
 
-2. **Clone or Download the Extension**
+2. **Clone or Download This Repository**
+
 ```bash
-git clone https://github.com/yourusername/dsa-saathi.git
+git clone https://github.com/shriyanshi-gaur/dsa-saathi.git
